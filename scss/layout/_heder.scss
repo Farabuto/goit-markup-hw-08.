@@ -14,9 +14,15 @@
 
 .menu {
     display: block;
-    display: flex;
+    display: none;
     text-align: center;
-
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .menu__item {
@@ -63,25 +69,40 @@
 
 .contact {
     margin-left: auto;
-    display: flex;
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        
+    }   
+    
 }
 .contact__menu {
     display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;  
+        margin-bottom: 21px;
+        margin-top: 11px;
+    }    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row-reverse
+    }
 }
 .contact__imet{
     display: block;
     display: flex;
-}
-.contact__imet:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 768px) {
+        margin-top: 10px;    
+    }    
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+    }
 }
 
 .contact__linc {
     color: #757575;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+    @include font('Roboto', normal, 500, 12px, 14px, 00.02em);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +116,13 @@
         color: var(--accent-color);
         fill: var(--accent-color);
     }
+    @media screen and (min-width: 1200px) {
+        @include font('Roboto', normal, 500, 14px, 16px, 00.02em);
+    }
 }
 .contact__svg {
-    margin-right: 10px;
+    margin-right: 8px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+    }
 }

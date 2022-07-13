@@ -375,8 +375,18 @@ input {
 
 .menu {
   display: block;
-  display: flex;
+  display: none;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: flex;
+  }
 }
 
 .menu__item {
@@ -420,27 +430,54 @@ input {
 
 .contact {
   margin-left: auto;
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+  }
 }
 
 .contact__menu {
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .contact__menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 21px;
+    margin-top: 11px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__menu {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .contact__imet {
   display: block;
   display: flex;
 }
-
-.contact__imet:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .contact__imet {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__imet {
+    margin-left: 30px;
+  }
 }
 
 .contact__linc {
   color: #757575;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.02em;
   display: flex;
   justify-content: center;
@@ -453,9 +490,24 @@ input {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .contact__linc {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
 
 .contact__svg {
-  margin-right: 10px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .contact__svg {
+    margin-right: 10px;
+  }
 }
 
 .hero {
@@ -512,7 +564,6 @@ input {
 @media screen and (min-width: 1200px) {
   .activity-section {
     margin-bottom: 94px;
-    max-width: 1600px;
   }
 }
 
@@ -596,7 +647,11 @@ input {
 
 .lesson-section {
   padding-bottom: 94px;
-  padding-top: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .lesson-section {
+    display: none;
+  }
 }
 
 .heading {

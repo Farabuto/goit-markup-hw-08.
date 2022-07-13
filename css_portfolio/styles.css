@@ -1,0 +1,426 @@
+/* rgba(33, 33, 33, 1) основний колік чорний */
+/* rgba(117, 117, 117, 1) вторичний колік чорний з прозорістю */
+/* rgba(33, 150, 243, 1) голубий колік використовується при наведені */
+/* rgba(255, 255, 255, 1) білий колір шрифту при наведені */
+/* focus тег фокусированя */
+/* hover туг наведеня */
+/* active зажиаєш і міняє колік */
+
+
+/* css ПОРТФОЛІО */
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+li,ul{
+  padding-left: 0;
+  margin: 0;
+}
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /*outline:1px solid red;*/
+}
+body {
+  font-family: Roboto;
+}
+:root {
+  --accent-color:#2196F3;
+}
+/* .remove-dots{list-style:none;} видалити крапки */
+.remove-dots {
+  list-style-type: none;
+}
+
+/* .remove-underscores{text-decoration:none;} видалити підкреслення */
+.remove-underscores {
+  text-decoration: none;
+}
+
+* {
+  color:#212121;
+}
+img{
+  display: block;
+}
+header{
+  border-bottom: 1px solid #ECECEC;
+}
+/* ---H-E-A-D-E-R */
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  display: contents;
+}
+.logo {
+  color: #212121;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+.logo-header {
+  margin-right: 93px;
+  display: flex;
+  display: block;
+}
+.header-list {
+  display: block;
+  display: flex;
+  text-align: center;
+}
+.header-item {
+  display: block;
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav:focus,
+.site-nav:hover,
+.site-nav:active {
+  color: var(--accent-color);
+}
+.testimony {
+  color: var(--accent-color);
+  cursor: pointer;
+  position: relative;
+}
+.testimony::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+}
+.contact-flex {
+  margin-left: auto;
+  display: flex;
+}
+.header-contact {
+  display: flex;
+}
+.header-item {
+  display: block;
+  display: flex;
+}
+.contact {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact:focus,
+.contact:hover,
+.contact:active {
+  color: var(--accent-color);
+  fill:var(--accent-color);
+}
+/* ---svg heder */
+.communication {
+  margin-right: 10px;
+}
+/* ---СЕРВІС--- */
+.aside {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.site-flex:not(:last-child){
+  margin-right: 8px;
+}
+.aside-nav {
+  background-color: #F5F4FA;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 4px;
+  border: var(--accent-color);
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.aside-nav:focus,
+.aside-nav:hover,
+.aside-nav:active {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* --АСОРТИМЕНТ-- */
+.pad-section{
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.obligatory {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.obligatory-flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.obligatory-card{
+  margin-left: 30px;
+  width: 370px;
+  margin-bottom: 30px;
+}
+ .remove-nav {
+display: block;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+.remove-nav:hover, .remove-nav:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.remove-nav:hover .remove-top-text,
+.remove-nav:focus .remove-top-text{
+  transform: translateY(0%);
+}
+.remove-nav-text{
+  position: relative;
+  overflow: hidden;
+}
+.remove-top-text{
+  position: absolute;
+  top: 0;
+  background-color:rgba(33, 150, 243, 0.9);
+  color: #FFFFFF;
+  height: 100%;
+  transform:translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+}
+.border {
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  padding:20px 24px 20px 24px;
+}
+.obligatory-img {
+  display: block;
+}
+.title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  margin-bottom: 4px;
+}
+.lead {
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+/*---F-O-O-T-E-R---*/
+.footer {
+  background-color: #2F303A;
+}
+.footer-pad {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+address{
+  padding-top: 20px;
+}
+.logo-footer {
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.logo-blu {
+  color: #2196F3;
+}
+.footer-list-pad {
+  padding-bottom: 9px;
+}
+.footer-map {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-contact:focus,
+.footer-contact:hover,
+.footer-contact:active {
+  color: #ffffff;
+}
+/*---footer-form---*/
+.footer-form-taitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.footer-form-div {
+  margin-left: 93px;
+  position: relative;
+}
+
+.footer-form {
+  width: 358px;
+  height: 50px;
+}
+
+.footer-label {
+  width: 100%;
+}
+
+.footer-label+input {
+  margin: 0;
+  padding: 15px 16px;
+  width: 100%;
+  height: 100%;
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-button {
+  position: absolute;
+  top: 36px;
+  left: 370px;
+
+  width: 200px;
+  height: 50px;
+  background-color: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  padding-left: 29px;
+  cursor: pointer;
+  border-style: none;
+}
+
+.footer-button-contact {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px; 
+}
+/* ---footer svg--- */
+.footer-soc-flex {
+  display: flex;
+  align-items: baseline;
+}
+.footer-soc-bloc {
+  width: 231px;
+}
+.footer-soc-logo {
+  margin-left: 70px;
+  width: 206px;
+}
+.footer-soc-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.footer-soc-list {
+  display: flex;
+}
+.footer-soc-imet:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-soc-link:hover {
+  background-color: #2196F3;
+}
+.footer-soc-icon {
+  fill: #ffffff;
+}
