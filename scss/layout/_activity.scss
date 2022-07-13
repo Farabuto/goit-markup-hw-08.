@@ -1,0 +1,38 @@
+.activity-section {
+    padding-top: 94px;
+}
+
+.activity {
+    display: flex;
+    flex: auto;
+}
+
+.activity__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.activity__imet {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activity__icon {
+    width: 70px;
+    height: 70px;
+}
+.activity__subject {
+    @include font('Roboto', normal, 700, 14px, 16px, 0.03em);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.activity__text {
+    @include font('Roboto', normal, 400, 14px, 24px, 0.03em);
+    width: 270px;
+    color: #757575;
+}

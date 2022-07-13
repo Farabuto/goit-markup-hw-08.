@@ -1,0 +1,16 @@
+.logo {
+    color: #212121;
+    @include font('Raleway', normal, 700, 26px, 31px,null);
+    &__nav {
+        margin-right: 93px;
+        display: flex;
+        display: block;
+    }    
+    &-footer {
+        color: #ffffff;
+        @include font('Raleway', normal, 700, 26px, 31px,null);
+    }    
+    &-blu {
+        color: #2196F3;
+    }
+}

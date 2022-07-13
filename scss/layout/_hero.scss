@@ -1,0 +1,52 @@
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+
+    //width: 100%;
+    
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background: #2F303A;
+
+    //background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    //        rgba(47, 48, 58, 0.4)),
+    //    url(../images/Img.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    // @media screen and(min-width:480px) {
+    //     width: 480px;
+    // }
+    
+    // @media screen and(min-width:768px) {
+    //     width: 768px;
+    // }
+    
+    // @media screen and(min-width:1200px) {
+    //     width: 1200px;
+    // }
+}
+
+.hero__title {
+    color: #ffffff;
+    @include font('Roboto', normal, 900, 44px, 60px, null);
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-align: center;
+    @media screen and(min-width:480px) {
+        max-width: 480px;
+        @include font('Roboto', normal, 900, 44px, 60px, null);
+    }
+
+    @media screen and(min-width:768px) {
+        max-width: 768px;
+        @include font('Roboto', normal, 900, 44px, 60px, null);
+    }
+
+    @media screen and(min-width:1200px) {
+        max-width: 1200px;
+        @include font('Roboto', normal, 900, 44px, 60px, null);
+    }
+}
+
