@@ -4,12 +4,13 @@
 }
 
 .heading {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    @include font('Roboto', normal, 700, 28px, 33px, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        @include font('Roboto', normal, 700, 36px, 42px, 0.03em);
+    }
 }
 
 .activity-cou-img {

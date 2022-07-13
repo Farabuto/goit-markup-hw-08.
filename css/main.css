@@ -38,11 +38,26 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   /*outline:1px solid red;*/
+}
+@media screen and (min-width: 480px) {
+  .container {
+    min-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -446,7 +461,7 @@ input {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
+  width: 100% px;
   padding-bottom: 200px;
   padding-top: 200px;
   background: #2F303A;
@@ -456,34 +471,78 @@ input {
   background-size: cover;
   display: block;
 }
+@media screen and (max-width: 1199px) {
+  .hero {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin-bottom: 94px;
+    max-width: 1600px;
+  }
+}
 
 .hero__title {
   color: #ffffff;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 42px;
   max-width: 600px;
   margin: 0 auto 30px;
   text-align: center;
 }
-
-.activity-section {
-  padding-top: 94px;
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
-.activity {
-  display: flex;
-  flex: auto;
+@media screen and (max-width: 1199px) {
+  .activity-section {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activity-section {
+    margin-bottom: 94px;
+    max-width: 1600px;
+  }
 }
 
-.activity__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .activity {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activity {
+    display: flex;
+    flex: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .activity__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activity__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .activity__imet {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -491,6 +550,11 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .activity__imet {
+    width: 270px;
+  }
 }
 
 .activity__icon {
@@ -508,6 +572,11 @@ input {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .activity__subject {
+    text-align: center;
+  }
+}
 
 .activity__text {
   font-family: "Roboto";
@@ -516,8 +585,13 @@ input {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  width: 270px;
+  width: 100%;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .activity__text {
+    width: 270px;
+  }
 }
 
 .lesson-section {
@@ -526,12 +600,25 @@ input {
 }
 
 .heading {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+  font-size: 28px;
+  line-height: 33px;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .heading {
+    margin-bottom: 50px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .activity-cou-img {
@@ -572,8 +659,14 @@ input {
 
 .items {
   background-color: #F5F4FA;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .items {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .heading-icon {
@@ -585,8 +678,18 @@ input {
   padding-bottom: 50px;
 }
 
-.card {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    display: flex;
+    flex: auto;
+  }
 }
 
 .heading-card {
@@ -594,15 +697,37 @@ input {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-  max-width: 270px;
 }
-
-.heading-card:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .heading-card {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heading-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heading-card {
+    width: calc((100% - 90px) / 4);
+    max-width: 270px;
+  }
 }
 
 .img-block {
   display: block;
+}
+@media screen and (max-width: 1199px) {
+  .img-block {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .img-block {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .items-text {
@@ -668,33 +793,41 @@ input {
 
 .customers {
   background-color: #ffffff;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.customers-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
-.customers-imet:not(:last-child) {
-  margin-right: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .customers-imet {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers-imet {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers-imet {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 /* --Постоянные клиенты svg-- */
 .customers-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .customers-link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -706,6 +839,11 @@ input {
 }
 .customers-link:hover, .customers-link:focus {
   border-color: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .customers-link {
+    width: 170px;
+  }
 }
 
 .customers-icon {
