@@ -174,19 +174,32 @@
                 <h2 class="heading heading-top">Чем мы занимаемся</h2>
                 <ul class="activity-cou-img remove-dots">
                     <li class="activity-img">
-                        <img src="./images/img0.jpg" alt="верстка" width="370" height="294">
+                        <img 
+                        <img class="img-block" 
+                        srcset="./images/index/works/desktops.jpg 1x,
+                                ./images/index/works/desktops-2x.jpg 2x
+                        " 
+                        src="./images/img0.jpg" alt="верстка" width="370" height="294">
                         <div class="lesson-section-text">
                             <h3 class="lesson-section-link">Десктопные приложения</h3>
                         </div>
                     </li>
                     <li class="activity-img">
-                        <img src="./images/img1.jpg" alt="дизайн" width="370" height="294">
+                        <img 
+                        srcset="./images/index/works/mobiles.jpg 1x,
+                                ./images/index/works/mobiles-2x.jpg 2x
+                        " 
+                        src="./images/img1.jpg" alt="дизайн" width="370" height="294">
                         <div class="lesson-section-text">
                             <h3 class="lesson-section-link">Мобильные приложения</h3>
                         </div>
                     </li>
                     <li class="activity-img">
-                        <img src="./images/img2.jpg" alt="внешнее оформление" width="370" height="294">
+                        <img
+                        srcset="./images/index/works/design.jpg 1x,
+                                ./images/index/works/design-2x.jpg 2x
+                        " 
+                        src="./images/img2.jpg"alt="внешнее оформление" width="370" height="294">
                         <div class="lesson-section-text">
                             <h3 class="lesson-section-link">Дизайнерские решения</h3>
                         </div>
@@ -200,7 +213,27 @@
                 <h2 class="heading">Наша команда</h2>
                 <ul class="card remove-dots">
                     <li class="heading-card">
-                        <img class="img-block" src="./images/team/img0.jpg" alt="Игорь Демьяненко" >
+                        <picture>
+                        <source
+                        srcset="./images/index/team/desktop/designer.jpg 1x,
+                                ./images/index/team/desktop/designer-2x.jpg 2x
+                        " 
+                        media="(min-width: 1200px)"
+                        >
+                        <source 
+                        srcset="./images/index/team/tablet/designer-tab.jpg 1x,
+                                ./images/index/team/tablet/designer-tab-2x.jpg 2x
+                        " 
+                        media="(min-width: 768px)" >
+                        <source 
+                        srcset="./images/index/team/mobile/designer-mob.jpg 1x,
+                                ./images/index/team/mobile/designer-mob-2x.jpg 2x
+                        "
+                         media="(min-width: 480px)" >  
+                        <img class="img-block"
+                        src="./images/team/img0.jpg" 
+                        alt="Игорь Демьяненко" >
+                        </picture>
                         <div class="items-text">
                             <h3 class="card-text">Игорь Демьяненко</h3>
                             <p class="text cart-position">Product Designer</p>
@@ -237,7 +270,22 @@
                         </div>
                     </li>
                     <li class="heading-card">
-                        <img class="img-block" src="./images/team/img1.jpg" alt="Ольга Репина">
+                        <picture>
+                            <source srcset="
+                                ./images/index/team/desktop/frontend.jpg 1x,
+                                ./images/index/team/desktop/frontend-2x.jpg 2x
+                            " media="(min-width: 1200px)">
+                            <source srcset="
+                                ./images/index/team/tablet/frontend-tab.jpg 1x,
+                                ./images/index/team/tablet/frontend-tab-2x.jpg 2x
+                            " media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/index/team/mobile/frontend-mob.jpg 1x,
+                                ./images/index/team/mobile/frontend-mob-2x.jpg 2x
+                            " media="(min-width: 480px)">
+                        <img class="img-block"
+                        src="./images/team/img1.jpg" alt="Ольга Репина">
+                        </picture>
                         <div class="items-text">
                             <h3 class="card-text">Ольга Репина</h3>
                             <p class="text cart-position">Frontend Developer</p>
@@ -274,7 +322,23 @@
                         </div>
                     </li>
                     <li class="heading-card">
-                        <img class="img-block" src="./images/team/img2.jpg" alt="Николай Тарасов">
+                        <picture>
+                            <source srcset="
+                                ./images/index/team/desktop/marketing.jpg 1x,
+                                ./images/index/team/desktop/marketing-2x.jpg 2x
+                            " media="(min-width: 1200px)">
+                            <source srcset="
+                                ./images/index/team/tablet/marketing-tab.jpg 1x,
+                                ./images/index/team/tablet/marketing-tab-2x.jpg 2x
+                            " media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/index/team/mobile/marketing-mob.jpg 1x,
+                                ./images/index/team/mobile/marketing-mob-2x.jpg 2x
+                            " media="(min-width: 480px)">
+ 
+                        <img class="img-block"
+                        src="./images/team/img2.jpg" alt="Николай Тарасов">
+                        </picture>
                         <div class="items-text">
                             <h3 class="card-text">Николай Тарасов</h3>
                             <p class="text cart-position">Marketing</p>
@@ -311,7 +375,23 @@
                         </div>
                     </li>
                     <li class="heading-card">
-                        <img class="img-block" src="./images/team/img3.jpg" alt="Михаил Ермаков">
+                        <picture>
+                            <source srcset="
+                                ./images/index/team/desktop/ui.jpg 1x,
+                                ./images/index/team/desktop/ui-2x.jpg 2x
+                            " media="(min-width: 1200px)">
+                            <source srcset="
+                                ./images/index/team/tablet/ui-tab.jpg 1x,
+                                ./images/index/team/tablet/ui-tab-2x.jpg 2x
+                            " media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/index/team/mobile/ui-mob.jpg 1x,
+                                ./images/index/team/mobile/ui-mob-2x.jpg 2x
+                            " media="(min-width: 480px)">
+                      
+                        <img class="img-block"
+                        src="./images/team/img3.jpg" alt="Михаил Ермаков">
+                        </picture>
                         <div class="items-text">
                             <h3 class="card-text">Михаил Ермаков</h3>
                             <p class="text cart-position">UI Designer</p>
