@@ -44,8 +44,18 @@
 
 /* --АСОРТИМЕНТ-- */
 .pad-section {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    @media screen and (min-width: 767px) {
+            padding-bottom: 30px;    
+        }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+    // padding-bottom: 94px;
+    // padding-top: 94px;
 }
 
 .obligatory {
@@ -83,12 +93,13 @@
         // margin-left: 30px;
         // width: 370px;
         // margin-bottom: 30px;
-        display: flex;
+        // display: flex;
             flex-wrap: wrap;
             gap: 30px;
+            width: 100%;
         
                 @media screen and (max-width: 767px) {
-                        margin-bottom: 30px;
+                        // margin-bottom: 30px;
                     }
                 
                     @media screen and (min-width: 768px) {
@@ -96,12 +107,20 @@
                     }
                 
                     @media screen and (min-width: 1200px) {
-                        width: calc((100% - 90px) / 4);
-                        max-width: 270px;
+                        width: calc((100% - 60px) / 3);
+                        // max-width: 270px;
                     }
     }
     &-img {
         display: block;
+        width: 100%;
+        @media screen and (min-width: 1200px) {
+                width: 370px;
+                height: 294px;
+            }
+
+        // width="370";
+        // height="294";
     }
 }
 .remove-nav {

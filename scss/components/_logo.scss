@@ -9,6 +9,10 @@
     &-footer {
         color: #ffffff;
         @include font('Raleway', normal, 700, 26px, 31px,null);
+        @media screen and (max-width: 1199px) {
+            display: flex;
+            justify-content: center;
+        }
     }    
     &-blu {
         color: #2196F3;

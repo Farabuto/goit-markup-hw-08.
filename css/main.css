@@ -81,6 +81,12 @@ body {
   font-size: 26px;
   line-height: 31px;
 }
+@media screen and (max-width: 1199px) {
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+  }
+}
 .logo-blu {
   color: #2196F3;
 }
@@ -111,9 +117,6 @@ body {
 }
 
 .footer-button {
-  position: absolute;
-  top: 40px;
-  left: 370px;
   width: 200px;
   height: 50px;
   background-color: #2196F3;
@@ -128,6 +131,13 @@ body {
   padding-left: 29px;
   cursor: pointer;
   border-style: none;
+}
+@media screen and (min-width: 1200px) {
+  .footer-button {
+    position: absolute;
+    top: 40px;
+    left: 370px;
+  }
 }
 
 .footer-button-contact {
@@ -1132,6 +1142,11 @@ address {
 .footer-list-pad {
   margin-bottom: 9px;
 }
+@media screen and (max-width: 1199px) {
+  .footer-list-pad {
+    margin-bottom: 8px;
+  }
+}
 
 .footer-map {
   color: #ffffff;
@@ -1163,17 +1178,48 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.footer-form-div {
-  margin-left: 93px;
-  position: relative;
+@media screen and (max-width: 1199px) {
+  .footer-form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-div {
+    margin-left: 93px;
+    position: relative;
+  }
 }
 
 .footer-form {
-  width: 358px;
   height: 50px;
+}
+@media screen and (max-width: 451px) {
+  .footer-form {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 452px) {
+  .footer-form {
+    width: 100%;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .footer-label {
@@ -1194,18 +1240,67 @@ address {
 }
 
 /* ---footer svg--- */
-.footer-soc-flex {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer-soc-flex {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-desc {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer-soc-bloc {
   width: 231px;
 }
+@media screen and (min-width: 768px) {
+  .footer-soc-bloc {
+    margin-left: 76px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-soc-bloc {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-bloc {
+    margin-left: 0;
+  }
+}
 
-.footer-soc-logo {
-  margin-left: 70px;
-  width: 206px;
+@media screen and (max-width: 1199px) {
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-soc-logo {
+    margin-right: 89px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-soc-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-logo {
+    margin-left: 70px;
+    width: 206px;
+    margin-right: 0;
+  }
 }
 
 .footer-soc-title {
@@ -1290,8 +1385,19 @@ address {
 
 /* --АСОРТИМЕНТ-- */
 .pad-section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 767px) {
+  .pad-section {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pad-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .obligatory {
@@ -1312,14 +1418,9 @@ address {
   gap: 30px;
 }
 .obligatory-card {
-  display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-@media screen and (max-width: 767px) {
-  .obligatory-card {
-    margin-bottom: 30px;
-  }
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .obligatory-card {
@@ -1328,12 +1429,18 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .obligatory-card {
-    width: calc((100% - 90px) / 4);
-    max-width: 270px;
+    width: calc((100% - 60px) / 3);
   }
 }
 .obligatory-img {
   display: block;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .obligatory-img {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .remove-nav {
