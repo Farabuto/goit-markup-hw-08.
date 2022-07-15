@@ -560,15 +560,11 @@ input {
   margin-left: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadom 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
 }
 .button-mob:focus, .button-mob:hover, .button-mob:active {
   fill: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 @media screen and (min-width: 768px) {
   .button-mob {
@@ -1386,12 +1382,7 @@ address {
 /* --АСОРТИМЕНТ-- */
 .pad-section {
   padding-top: 60px;
-  padding-bottom: 40px;
-}
-@media screen and (min-width: 767px) {
-  .pad-section {
-    padding-bottom: 30px;
-  }
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .pad-section {

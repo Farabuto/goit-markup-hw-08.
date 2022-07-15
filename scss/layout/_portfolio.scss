@@ -45,17 +45,13 @@
 /* --АСОРТИМЕНТ-- */
 .pad-section {
     padding-top: 60px;
-    padding-bottom: 40px;
-    @media screen and (min-width: 767px) {
-            padding-bottom: 30px;    
-        }
-
+    padding-bottom: 60px;
+    
     @media screen and (min-width: 1200px) {
         padding-bottom: 94px;
         padding-top: 94px;
     }
-    // padding-bottom: 94px;
-    // padding-top: 94px;
+    
 }
 
 .obligatory {
@@ -74,26 +70,10 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        // @media screen and (max-width: 768px) {
-        //     width:100%;
-        // }
-        // @media screen and (min-width: 768px) {
-        //     width: calc((100% - 30px) / 2);
-        // }
-        
-        // @media screen and (min-width: 1200px) {
-        //     width: calc((100% - 60px) / 3);
-        //     // flex-wrap: wrap;
-        //         // margin-left: -30px;
-        //         // margin-bottom: -30px;
-        // }
     }
     
     &-card {
-        // margin-left: 30px;
-        // width: 370px;
-        // margin-bottom: 30px;
-        // display: flex;
+        
             flex-wrap: wrap;
             gap: 30px;
             width: 100%;
