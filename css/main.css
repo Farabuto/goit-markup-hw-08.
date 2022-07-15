@@ -70,7 +70,6 @@ body {
 }
 .logo__nav {
   margin-right: 93px;
-  display: flex;
   display: block;
 }
 .logo-footer {
@@ -261,11 +260,6 @@ input {
   margin-right: auto;
   padding: 40px;
 }
-@media screen and (min-width: 768px) {
-  .form {
-    width: 528px;
-  }
-}
 .form-taitle {
   font-family: "Roboto";
   font-style: normal;
@@ -300,11 +294,6 @@ input {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
-  .input-form {
-    width: 448px;
-  }
-}
 .input-form:focus, .input-form:hover, .input-form:active {
   border-color: var(--accent-color);
 }
@@ -322,55 +311,9 @@ input {
   fill: var(--accent-color);
 }
 
-.polisy-label::before {
-  content: "";
-}
-
-.checkbox:checked + .polisy-label::before {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.checkbox-form {
-  position: fixed;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  background: tomato;
-  border: 2px solid #212121;
-}
-.checkbox-form:hover, .checkbox-form:focus {
-  fill: #2196F3;
-  cursor: pointer;
-}
-.checkbox-form-span {
-  position: absolute;
-  width: 18.67px;
-  height: 18.67px;
-  transform: translate(-50%, -50%);
-  fill: #188CE8;
-  background-color: tomato;
-}
-
-.checkbox-form {
-  justify-content: center;
-  display: contents;
-  fill: #188CE8;
-}
-
 .comment {
   display: flex;
   flex-direction: column;
-}
-
-.form-polisy {
-  margin-left: 0px;
-}
-@media screen and (min-width: 768px) {
-  .form-polisy {
-    margin-left: 12px;
-  }
 }
 
 .button-form {
@@ -401,6 +344,112 @@ input {
   border-radius: 4px;
 }
 
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+
+.polisy-label {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+}
+@media screen and (max-width: 450px) {
+  .polisy-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .polisy-label {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+
+.contract {
+  color: #2196F3;
+}
+
+.polisy-label::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 25%;
+  margin-right: 8px;
+}
+
+.checkbox:checked + .polisy-label::before {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.pofig {
+  position: relative;
+}
+
+.checkbox-form {
+  position: absolute;
+  left: 44px;
+}
+@media screen and (max-width: 450px) {
+  .checkbox-form {
+    position: absolute;
+    left: 149px;
+    top: 439px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .checkbox-form {
+    position: absolute;
+    left: 89px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-form {
+    position: absolute;
+    left: 61px;
+  }
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 450px) {
+  .form-polisy {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-polisy {
+    margin-left: 12px;
+  }
+}
+
 .page-header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -411,12 +460,10 @@ input {
 }
 
 .nav {
-  display: flex;
   display: contents;
 }
 
 .menu {
-  display: block;
   display: none;
   text-align: center;
 }
@@ -425,14 +472,8 @@ input {
     display: flex;
   }
 }
-@media screen and (min-width: 1200px) {
-  .menu {
-    display: flex;
-  }
-}
 
 .menu__item {
-  display: block;
   display: flex;
 }
 
@@ -441,6 +482,8 @@ input {
 }
 
 .menu__link {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -621,6 +664,8 @@ input {
 }
 
 .memu-mob__link {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -640,6 +685,8 @@ input {
 }
 
 .contact-mob__linc-tel {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
@@ -651,15 +698,15 @@ input {
 }
 @media screen and (max-width: 352px) {
   .contact-mob__linc-tel {
-    font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    letter-spacing: 0.02em;
     color: #757575;
   }
 }
 
 .contact-mob__linc-mail {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -693,6 +740,8 @@ input {
 }
 
 .soc-mob__linc {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
