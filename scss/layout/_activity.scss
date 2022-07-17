@@ -26,6 +26,10 @@
     @media screen and (min-width: 1200px) {
         width: calc((100% - 90px) / 4);
     }
+     @media screen and (max-width: 767px) {
+        
+         margin-bottom: 30px;
+    }
 }
 
 .activity__imet {

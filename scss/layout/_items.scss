@@ -1,8 +1,14 @@
 .items {
-    background-color: #F5F4FA;
-    padding-bottom: 60px;
-    padding-top: 60px;
-  
+    @media screen and (max-width: 767px) {
+            padding-bottom:30px;
+            background-color: #F5F4FA;
+            padding-top: 60px;
+        }
+    @media screen and (min-width: 768px) {
+            padding-bottom: 60px;
+            background-color: #F5F4FA;
+            padding-top: 60px;
+        }
     @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
     padding-top: 94px;
